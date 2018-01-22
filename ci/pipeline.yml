@@ -169,7 +169,7 @@ jobs:
   - get: timesheets-artifacts
     trigger: false
   - task: migrate database
-    file: pal-tracker-distributed/ci/migrateDatabase.yml
+    file: pal-tracker/ci/migrateDatabase.yml
     params:
       CF_API_URL: {{cf-api-url}}
       CF_USERNAME: {{cf-username}}
