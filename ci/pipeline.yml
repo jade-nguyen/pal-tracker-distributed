@@ -94,6 +94,7 @@ jobs:
   - task: migrate database
     file: pal-tracker/ci/migrateDatabase.yml
     params:
+      APP_NAME: tracker-allocations
       CF_API_URL: {{cf-api-url}}
       CF_USERNAME: {{cf-username}}
       CF_PASSWORD: {{cf-password}}
@@ -120,6 +121,7 @@ jobs:
   - task: migrate database
     file: pal-tracker/ci/migrateDatabase.yml
     params:
+      APP_NAME: tracker-backlog
       CF_API_URL: {{cf-api-url}}
       CF_USERNAME: {{cf-username}}
       CF_PASSWORD: {{cf-password}}
@@ -146,6 +148,7 @@ jobs:
   - task: migrate database
     file: pal-tracker/ci/migrateDatabase.yml
     params:
+      APP_NAME: tracker-registration
       CF_API_URL: {{cf-api-url}}
       CF_USERNAME: {{cf-username}}
       CF_PASSWORD: {{cf-password}}
@@ -171,6 +174,7 @@ jobs:
   - task: migrate database
     file: pal-tracker/ci/migrateDatabase.yml
     params:
+      APP_NAME: tracker-timesheets
       CF_API_URL: {{cf-api-url}}
       CF_USERNAME: {{cf-username}}
       CF_PASSWORD: {{cf-password}}
